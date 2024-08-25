@@ -44,16 +44,24 @@
 
 <body>
 
-  <nav class="flex box-border mx-[78px] text-white bg-black mt-[40px] rounded-[100px]">
-    <ul class="flex box-border space-x-[100px] w-[1284px] h-[109px] pt-[42px] ml-[66px]">
-      <li class="w-[47px] h-[60px] rounded-[70px]">Home</li>
-      <li>About</li>
-      <li>Service</li>
-      <li> <img src="./assets/Component 4.png" alt="" class="flex w-[178px] h-[52px] pb-[15px]"> </li>
-      <li>Resume</li>
-      <li>Project</li>
-      <li>Contact</li>
-    </ul>
+  <nav class="grid grid-cols-3 text-white text-2xl bg-black mt-[40px] py-1 mx-14 rounded-[100px]">
+    <div class="">
+      <ul class="flex gap-7  ml-[6px]">
+        <li class="bg-[#81E541] py-[42px] px-[70px] rounded-[100px]">Home</li>
+        <li class="py-[42px] pr-[50px]">About</li>
+        <li class="py-[42px]">Service</li>
+      </ul>
+    </div>
+    <div>
+        <img src="./assets/Component 4.png" alt="" class="pt-[33px] ps-[140px]"> </li>
+    </div>
+    <div>
+      <ul class="flex gap-[50px] py-[42px]">
+        <li>Resume</li>
+        <li>Project</li>
+        <li>Contact</li>
+      </ul>
+    </div>  
   </nav>
   <div class="text-center my-[50px]">
       <h6 class="border-2 border-black rounded-full mx-[630px]">Hello</h6>
@@ -62,14 +70,14 @@
       <h2 class="text-5xl font-bold">I’m <span class="text-[#81E541]"> Jerry </span>, </br> Product Designer</h2>
   </div>
   <div class="mx-[100px]">
-    <p class="float-start w-1/5">Jerry’s Expceptional product design 
-      ensure our website’s success .
+    <p class="float-start w-1/5 font-semibold">Jerry’s Expceptional product design 
+      ensure our website’s success.
       Highly  recommended</p>
       <img class="float-end" src="./assets/Frame 5.png" alt="">
   </div>
-  <div class="bg-[#81E541] rounded-full w-[500px] flex flex-col ml-auto">
+  <div class="bg-[#81E541] rounded-full w-[500px] flex flex-col ms-[450px] relative">
     <img src="./assets/IMG2024.png" alt="">
-    <div class="bg-[#B8B8B8] border rounded-3xl mx-auto px-1 py-1 flex gap-4">
+    <div class="bg-[#B8B8B8] border rounded-3xl mx-auto px-1 py-1 flex gap-4 absolute bottom-[100px] left-[170px]">
       <p class="text-white border rounded-3xl px-4">Portfolio</p>
       <p class="pe-4">Hire me</p>
     </div>
@@ -103,6 +111,7 @@
   <div class="my-10">
     <h5 class="text-center text-4xl font-semibold">MY <span class="text-[#81E541]">WORK EXPERIENCE</span></h5>
     <div class="grid grid-cols-2 gap-4 my-[30px] mx-[250px]">
+      
       <div>
         <div class="mt-8 mb-[77px]">
           <h5 class="text-2xl font-semibold">Cognizant, Mumbai</h5>
@@ -117,21 +126,33 @@
           <p>Sep 2023</p>
         </div>
       </div>
-      <div>
+
+      <div class="flex gap-[70px]">
+        <div class="mt-8">
+          <img src="./assets/Frame 9.png" class="w-[35px]" alt="">
+          <img src="./assets/Line 1.png" class="ps-4 h-[100px]" alt="">
+          <img src="./assets/Frame 10.png" class="w-[35px]" alt="">
+          <img src="./assets/Line 1.png" class="ps-4 h-[120px]" alt="">
+          <img src="./assets/Frame 9.png" class="w-[35px]" alt="">
+        </div>
+
+        <div class="w-[300px]">
         <ul>
-          <li class="mt-8 mb-[30px] list-disc">
+          <li class="mt-8 mb-[30px]">
             <h5 class="text-2xl font-semibold">Experince Designer</h5>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit qui pariatur suscipit recusandae, corporis vel?</p>
           </li>
-          <li class="mb-[30px] list-disc">
+          <li class="mb-[30px]">
             <h5 class="text-2xl font-semibold">UI/UX Designer</h5>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum id adipisci quibusdam perferendis maxime provident?</p>
           </li>
-          <li class="list-disc">
+          <li>
             <h5 class="text-2xl font-semibold">Lead UX Designer</h5>
           </li>
           </ul>
+        </div>
       </div>
+    
     </div>
   </div>
   <div class="bg-stone-200 rounded-[50px] mx-[80px] py-10 mb-14">
@@ -224,6 +245,6 @@
       </div>
     </div>
   </div>
-  
+
 </body>
 </html>
