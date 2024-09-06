@@ -44,8 +44,8 @@
 
 <body>
 
-  <nav class="grid grid-cols-3 text-white text-2xl bg-black mt-[40px] py-1 mx-14 rounded-[100px]">
-    <div class="">
+  <nav class="container mx-auto grid grid-cols-3 text-white text-2xl bg-black mt-[40px] py-1 rounded-[100px]">
+    <div class="hidden md:flex">
       <ul class="flex gap-7  ml-[6px]">
         <li class="bg-[#81E541] py-[42px] px-[70px] rounded-[100px]">Home</li>
         <li class="py-[42px] pr-[50px]">About</li>
@@ -55,7 +55,7 @@
     <div>
         <img src="./assets/Component 4.png" alt="" class="pt-[33px] ps-[140px]"> </li>
     </div>
-    <div>
+    <div class="hidden md:flex">
       <ul class="flex gap-[50px] py-[42px]">
         <li>Resume</li>
         <li>Project</li>
@@ -63,65 +63,66 @@
       </ul>
     </div>  
   </nav>
-  <div class="justify-center text-center my-[50px] w-[730px] relative">
-      <h6 class="border-2 border-black w-[60px] rounded-full mx-[630px]">Hello</h6>
-      <img src="./assets/Component 1.png" class="absolute right-5 bottom-5" alt="">
+  <div class="container text-center my-[60px] w-[70px] mx-auto relative">
+      <h6 class="border-2 border-black rounded-full">Hello</h6>
+      <img src="./assets/Component 1.png" class="absolute left-[60px] bottom-5" alt="">
   </div>
-  <div class="text-center mb-[100px] mx-auto w-[495px] relative">
+  <div class="container text-center mb-[100px] mx-auto w-[495px] relative">
       <h2 class="text-5xl font-bold">I’m <span class="text-[#81E541]"> Jerry </span>, </br> Product Designer</h2>
       <img src="./assets/Component 2.png" class="absolute bottom-[-53px]" alt="">
   </div>
-  <div class="mx-[100px]">
-    <img src="./assets/“2.png" alt="">
-    <p class="float-start w-1/5 font-semibold">Jerry’s Expceptional product design 
-      ensure our website’s success.
-      Highly  recommended</p>
-      <img class="float-end" src="./assets/Frame 5.png" alt="">
+  <div class="container mx-auto">
+    <div class="font-semibold w-[500px] text-2xl mx-auto mb-10 md:float-start md:w-1/4 md:text-xl">
+      <img src="./assets/“2.png" alt="">
+      <p>Jerry’s Expceptional product design 
+        ensure our website’s success.
+        Highly  recommended</p>
+    </div>
+      <img class="md:float-end mx-auto mb-10" src="./assets/Frame 5.png" alt="">
   </div>
-  <div class="bg-[#81E541] rounded-full w-[500px] flex flex-col ms-[450px] relative">
+  <div class="container bg-[#81E541] rounded-full lg:w-[500px] md:w-[450px] md:ms-0 flex flex-col lg:ms-[450px] mx-auto relative">
     <img src="./assets/IMG2024.png" alt="">
     <div class="bg-[#B8B8B8] border rounded-3xl mx-auto px-1 py-1 flex gap-4 absolute bottom-[100px] left-[170px]">
       <p class="flex text-white border rounded-3xl w-[100px] px-2 gap-1">Portfolio <img src="./assets/Arrow 4.png" class="h-5 pt-2" alt=""> </p>
       <p class="pe-4">Hire me</p>
     </div>
   </div>
-  <div class="bg-my-service bg-no-repeat text-white w-[1280px] h-[586px] mx-auto pt-14">
-    <div class="mx-[100px] pb-[80px]">
-      <h5 class="float-start text-4xl font-bold">My <span class="text-black">Services</span></h5>
-      <p class="float-end w-[450px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quisquam distinctio, blanditiis nihil, aperiam maxime repellat facilis eos corporis aut optio minima ullam, at mollitia!</p>
+  <div class="container bg-my-service bg-no-repeat bg-cover text-white text-center mx-auto py-14">
+    <div class="px-[80px] lg:pb-[80px] pb-5">
+      <h5 class="lg:float-start text-4xl font-bold mb-8">My <span class="text-black">Services</span></h5>
+      <p class="lg:float-end lg:w-[450px] ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quisquam distinctio, blanditiis nihil, aperiam maxime repellat facilis eos corporis aut optio minima ullam, at mollitia!</p>
     </div>
-      <div class="grid grid-cols-3 gap-4 my-[30px] clear-both ps-[90px]">
-        <div class="bg-stone-100/50 w-[330px] rounded-3xl relative">
-          <h5 class="border-b-2 w-[330px] py-3 ps-5 mb-5">UI/UX DESIGN</h5>
-          <div class="bg-stone-100/30 w-[250px] h-[20px] mx-auto rounded-t-lg"></div>
-          <div class="bg-gradient-to-r from-stone-100/50 to-gray-500 w-[280px] h-[20px] mx-auto rounded-t-lg"></div>
-          <img src="./assets/Rectangle 9.png" alt="">
-          <img src="./assets/Arrow 4.png" class="bg-[#4B4B4B] w-[60px] p-3 rounded-full absolute bottom-[10px] right-3" alt="">
+      <div class="lg:grid lg:grid-cols-3 my-[30px] clear-both ps-auto">
+        <div class="bg-stone-100/50 lg:w-[330px] w-[500px] mx-auto rounded-3xl mb-8 relative">
+          <h5 class="border-b-2 lg:w-[330px] w-[500px] lg:text-base text-2xl py-3 ps-5 mb-5">UI/UX DESIGN</h5>
+          <div class="bg-stone-100/30 lg:w-[250px] w-[350px] h-[20px] mx-auto rounded-t-lg"></div>
+          <div class="bg-gradient-to-r from-stone-100/50 to-gray-500 lg:w-[280px] w-[380px] h-[20px] mx-auto rounded-t-lg"></div>
+          <img src="./assets/Rectangle 9.png" class="lg:w-[350px] w-[500px]" alt="">
+          <img src="./assets/Arrow 4.png" class="bg-[#4B4B4B] lg:w-[60px] w-[90px] p-3 rounded-full absolute bottom-[10px] right-3" alt="">
         </div>
-        <div class="bg-stone-100/50 w-[330px] rounded-3xl relative">
-          <h5 class="border-b-2 w-[330px] py-3 ps-5 mb-5">WEB DESIGN</h5>
-          <div class="bg-stone-100/30 w-[250px] h-[20px] mx-auto rounded-t-lg"></div>
-          <div class="bg-gradient-to-r from-stone-100/50 to-gray-500 w-[280px] h-[20px] mx-auto rounded-t-lg"></div>
-          <img src="./assets/Rectangle 9.png" alt="">
-          <img src="./assets/Arrow 4.png" class="bg-[#4B4B4B] w-[60px] p-3 rounded-full absolute bottom-[10px] right-3" alt="">
+        <div class="bg-stone-100/50 lg:w-[330px] w-[500px] mx-auto rounded-3xl mb-8 relative">
+          <h5 class="border-b-2 lg:w-[330px] w-[500px] lg:text-base text-2xl py-3 ps-5 mb-5">WEB DESIGN</h5>
+          <div class="bg-stone-100/30 lg:w-[250px] w-[350px] h-[20px] mx-auto rounded-t-lg"></div>
+          <div class="bg-gradient-to-r from-stone-100/50 to-gray-500 lg:w-[280px] w-[380px] h-[20px] mx-auto rounded-t-lg"></div>
+          <img src="./assets/Rectangle 9.png" class="lg:w-[350px] w-[500px]" alt="">
+          <img src="./assets/Arrow 4.png" class="bg-[#4B4B4B] lg:w-[60px] w-[90px] p-3 rounded-full absolute bottom-[10px] right-3" alt="">
         </div>
-        <div class="bg-stone-100/50 w-[330px] rounded-3xl relative">
-          <h5 class="border-b-2 w-[330px] py-3 ps-5 mb-5">LANDING PAGE</h5>
-          <div class="bg-stone-100/30 w-[250px] h-[20px] mx-auto rounded-t-lg"></div>
-          <div class="bg-gradient-to-r from-stone-100/50 to-gray-500 w-[280px] h-[20px] mx-auto rounded-t-lg"></div>
-          <img src="./assets/Rectangle 9.png" alt="">
-          <img src="./assets/Arrow 4.png" class="bg-[#4B4B4B] w-[60px] p-3 rounded-full absolute bottom-[10px] right-3" alt="">
+        <div class="bg-stone-100/50 lg:w-[330px] w-[500px] mx-auto rounded-3xl mb-8 relative">
+          <h5 class="border-b-2 lg:w-[330px] w-[500px] lg:text-base text-2xl py-3 ps-5 mb-5">LANDING PAGE</h5>
+          <div class="bg-stone-100/30 lg:w-[250px] w-[350px] h-[20px] mx-auto rounded-t-lg"></div>
+          <div class="bg-gradient-to-r from-stone-100/50 to-gray-500 lg:w-[280px] w-[380px] h-[20px] mx-auto rounded-t-lg"></div>
+          <img src="./assets/Rectangle 9.png" class="lg:w-[350px] w-[500px]" alt="">
+          <img src="./assets/Arrow 4.png" class="bg-[#4B4B4B] lg:w-[60px] w-[90px] p-3 rounded-full absolute bottom-[10px] right-3" alt="">
         </div>
       </div>
       <div class="w-[150px] mx-auto pt-5">
         <img src="./assets/Frame 8.png" alt="">
       </div>
   </div>
-  <div class="my-10">
+  <div class="container mx-auto my-10">
     <h5 class="text-center text-4xl font-semibold">MY <span class="text-[#81E541]">WORK EXPERIENCE</span></h5>
-    <div class="grid grid-cols-2 gap-4 my-[30px] mx-[250px]">
-      
-      <div>
+    <div class="md:grid md:grid-cols-2 lg:w-[900px]  my-[30px] mx-auto">
+      <div class="md:text-left text-center">
         <div class="mt-8 mb-[77px]">
           <h5 class="text-2xl font-semibold">Cognizant, Mumbai</h5>
           <p>Sep 2016- July 2020</p>
@@ -136,10 +137,10 @@
         </div>
       </div>
 
-      <div class="flex gap-[70px]">
-        <div class="mt-8">
+      <div class="flex gap-[70px] md:w-[100%] w-[400px] mx-auto">
+        <div class="mt-10">
           <img src="./assets/Frame 9.png" class="w-[35px]" alt="">
-          <img src="./assets/Line 1.png" class="ps-4 h-[100px]" alt="">
+          <img src="./assets/Line 1.png" class="ps-4 lg:h-[95px] md:h-[120px] h-[95px]" alt="">
           <img src="./assets/Frame 10.png" class="w-[35px]" alt="">
           <img src="./assets/Line 1.png" class="ps-4 h-[120px]" alt="">
           <img src="./assets/Frame 9.png" class="w-[35px]" alt="">
@@ -164,13 +165,13 @@
     
     </div>
   </div>
-  <div class="bg-stone-200 rounded-[50px] mx-[80px] py-10 mb-14">
+  <div class="container bg-stone-200 rounded-[50px] mx-auto py-14 mb-14">
     <div class="grid grid-cols-2 gap-4">
-      <div class="mx-[100px] bg-[#81E541] rounded-[60px] w-[300px] h-[400px]">
+      <div class="mx-[100px] bg-[#81E541] rounded-[60px] w-[300px] h-[402px]">
         <img src="./assets/DSC_0367 1.png" class="h-[400px]" alt="">
       </div>
       <div>
-        <div class="pr-[80px] pb-14">
+        <div class="pr-[80px] pb-14 mb-10">
           <h5 class="text-4xl font-semibold pb-10">Why <span class="text-[#81E541]">Hire Me?</span></h5>
           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni, officiis quisquam dolores porro ipsam dolorum autem cupiditate at dolorem? </p>
         </div>
@@ -187,47 +188,47 @@
       </div>
     </div>
   </div>
-  <div class="grid grid-cols-2 pb-14 mx-[100px]">
+  <div class="container grid grid-cols-2 pb-14 mx-auto w-[1100px]">
     <h5 class="text-5xl font-bold ps-10">Lets have a look at </br>my <span class="text-[#81E541]">Portfolio</span></h5>
-    <button class="bg-[#81E541] text-white text-xl ms-[300px] w-[130px] h-11 rounded-[20px]">See All</button>
+    <button class="bg-[#81E541] text-white text-xl ms-[370px] w-[130px] h-11 rounded-[20px]">See All</button>
   </div>
-  <div class="grid grid-cols-2 pb-14 ms-[150px]">
-    <div class="bg-gradient-to-l from-stone-200 to-gray-500 w-[400px] h-[200px] rounded-3xl ps-5 pt-[130px] relative">
+  <div class="container w-[1100px] mx-auto grid grid-cols-2 pb-14">
+    <div class="bg-gradient-to-l from-stone-200 to-gray-500 w-[400px] h-[200px] rounded-3xl ps-5 ms-3 pt-[130px] relative">
       <h4 class="text-5xl text-white">Lirante</h4>
       <img src="./assets/Frame 18.png" class="absolute right-6 top-5" alt="">
     </div>
-    <div class="bg-gradient-to-l from-stone-200 to-gray-500 w-[400px] h-[200px] rounded-3xl ps-5 pt-[130px] relative">
+    <div class="bg-gradient-to-l from-stone-200 to-gray-500 w-[400px] h-[200px] rounded-3xl ps-5 ms-[120px] pt-[130px] relative">
       <h4 class="text-5xl text-white">Lirante</h4>
       <img src="./assets/Frame 18.png" class="absolute right-6 top-5" alt="">
     </div>
   </div>
-  <div class="w-[150px] mx-auto pt-5 mb-10">
+  <div class="container w-[150px] mx-auto pt-5 mb-10">
     <img src="./assets/Frame 8.png" alt="">
   </div>
-  <div class="mx-[250px] pb-14">
+  <div class="container w-[850px] mx-auto pb-14">
     <button class="bg-[#81E541] text-white w-[130px] h-11 rounded-[20px] mr-7">Landing Page</button>
     <button class="bg-[#81E541] text-white w-[130px] h-11 rounded-[20px] mr-7">Product Design</button>
     <button class="bg-[#81E541] text-white w-[130px] h-11 rounded-[20px] mr-7">Animation</button>
     <button class="bg-[#81E541] text-white w-[130px] h-11 rounded-[20px] mr-7">Glessmorphism</button>
     <button class="bg-[#81E541] text-white w-[130px] h-11 rounded-[20px] mr-7">Cards</button>
   </div>
-  <div class="justify-center text-center w-[700px] mb-14 mx-auto">
+  <div class="container justify-center text-center w-[700px] mb-14 mx-auto">
     <div class="inline-flex">
       <h5 class="text-4xl font-semibold pb-10">Lirante - Food Delivery Sloution</h5>
       <img src="./assets/Frame 22.png" class="w-10 h-10 ms-3 mt-1" alt="">
     </div>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quos similique voluptatum aut maxime reprehenderit nulla in cum! Mollitia quae ea repellendus vel dolorem, pariatur sunt quasi dolores exercitationem veritatis.</p>
   </div>
-  <div class="bg-my-service bg-no-repeat text-white w-[1280px] h-[586px] mx-auto pt-14 mb-[150px]">
+  <div class="container bg-my-service bg-no-repeat bg-cover text-white mx-auto py-14 mb-[150px]">
     <div class="w-[500px] justify-center text-center mx-auto mb-14 relative">
       <h5 class="text-4xl font-semibold mb-5">Testimonials That </br> Speak to <span class="text-black">My Results</span></h5>
       <img src="./assets/Component 3.png" class="absolute top-[-11px] right-[88px]" alt="">
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium iusto vel eligendi quo iure assumenda laboriosam saepe officia non accusamus?</p>
     </div>
-    <div class="grid grid-cols-3 gap-5 mx-10">
+    <div class="grid md:grid-cols-3 grid-cols-1 gap-5 mx-10">
       <div class="bg-gray-800/65 px-5 py-5 rounded-[50px]">
         <div class="">
-          <div>
+          <div class="container">
             <img src="./assets/Frame 25.png" class="float-start" alt="">
             <img src="./assets/“.png" class="float-end" alt="">
           </div>
